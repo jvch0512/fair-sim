@@ -12,7 +12,7 @@ Cyber risk in euros, with the uncertainty left in. A dependency-free **Python** 
 
 ## Quick start
 
-Python 3.9+, standard library only.
+Python 3.11+, standard library only.
 
 ```bash
 python3 -m unittest discover -s tests          # 35 tests
