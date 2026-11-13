@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>fair-sim</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand"><span class="logo">FS</span><div><h1>fair-sim</h1><p>Cyber risk in euros, with the uncertainty left in</p></div></div>
+    <div class="actions">
+      <button class="btn sec" id="load" type="button">Load sample</button>
+      <button class="btn" id="run" type="button">Run simulation</button>
+      <a href="/report.html" target="_blank" rel="noopener">Report</a>
+      <a href="/report.md" target="_blank" rel="noopener">Markdown</a>
+    </div>
+  </header>
+  <div class="layout">
+    <section class="inputs" id="inputs" aria-label="Inputs"></section>
+    <section class="results" id="results" aria-live="polite"><p class="empty">Load the sample or enter your own ranges, then run the simulation.</p></section>
+  </div>
+  <div id="toast" class="toast" role="status" hidden></div>
+  <script src="/app.js"></script>
+</body>
+</html>

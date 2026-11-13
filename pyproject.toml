@@ -1,0 +1,20 @@
+[project]
+name = "fair-sim"
+version = "1.0.0"
+description = "FAIR-style cyber risk quantification with Monte Carlo and control what-if analysis"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+dependencies = []
+
+[project.scripts]
+fair-sim = "fairsim.cli:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["fairsim*"]
+
+[tool.setuptools.package-data]
+fairsim = ["web/*"]
